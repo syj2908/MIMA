@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_mima"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_mima"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.user.ChangeLoginPsdActivity" />
+        <activity android:name=".ui.psdbook.PsdDetailActivity" />
+        <activity android:name=".AddActActivity" />
+        <activity android:name=".PsdTestActivity" />
+        <activity android:name=".PsdCreatorActivity" /> <!-- <activity android:name=".ui.login.LoginActivity"></activity> -->
+        <activity android:name=".ui.psdbook.ChangeDetailActivity" />
+    </application>
+
+</manifest>

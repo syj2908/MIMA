@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_psd_creator"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:singleLine="true"
+        android:text="请输入生成密码的字符长度(6~20位)："
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/psd_cre_len"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="请输入您想生成的密码的包括哪些字符："
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_checkbox_1"
+        android:text="数字字符"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorGrey"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_checkbox_2"
+        android:text="大写字母"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorGrey"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_checkbox_3"
+        android:text="小写字母"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorGrey"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_checkbox_4"
+        android:text="特殊字符"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorGrey"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="生成的密码如下："
+        android:textSize="20sp"
+        android:layout_margin="20dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <EditText
+            android:id="@+id/psd_created"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/psd_creator_copy"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:inputType="number" />
+        <Button
+            android:id="@+id/psd_creator_copy"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="复制"
+            android:textSize="15sp"
+            android:background="@color/colorBlue"
+            android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_psdcreat"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:text="生成"
+        android:textSize="20dp"
+        android:background="@color/colorBlue"
+        android:textColor="@color/colorWhite"/>
+
+
+
+</LinearLayout>

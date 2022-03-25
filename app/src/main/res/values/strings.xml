@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">觅码</string>
+    <string name="app_title">觅 码</string>
+    <string name="title_home">密码本</string>
+    <string name="title_notifications">个人页</string>
+    <string name="person_page">个人信息</string>
+    <string name="chang_passwd">修改密码</string>
+    <string name="version">版本信息</string>
+    <string name="versionInfo">现在已是最新版本，版本号：v1.0</string>
+    <string name="test_string">TestTestTest</string>
+    <string name="testTitle">强度检测</string>
+    <string name="inputPasswd">输入待检测密码…</string>
+    <string name="testBtn">检测</string>
+    <string name="testResultText1">密码强度：</string>
+    <string name="testResultText2">修改建议：</string>
+</resources>
